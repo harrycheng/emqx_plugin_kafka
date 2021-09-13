@@ -57,7 +57,7 @@ Build the EMQX broker
   emqx_dashboard,
    ...]}
  增加
-  {emqx_plugin_kafka, {git, "https://github.com/jameycai/emqx_plugin_kafka.git", {tag, "master"}}}
+  {emqx_plugin_kafka, {git, "https://github.com/jameycai/emqx_plugin_kafka.git", {tag, "main"}}}
  修改后变成
  {deps,
  [emqx,
