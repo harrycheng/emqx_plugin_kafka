@@ -72,7 +72,15 @@ Build the EMQX broker
 ````
 
 ###### 5. 编译EMQX，并且启动EMQX
-进入emqx-rel4.1目录，执行make命令，此过程会因为网络问题，多次出现错误导致停止，只需要不断地make直到成功。
+
+5.1 注意中文环境导致的编译问题
+
+```
+export LC_ALL=en_US.UTF-8
+
+```
+
+5.2 进入emqx-rel4.1目录，执行make命令，此过程会因为网络问题，多次出现错误导致停止，只需要不断地make直到成功。
 ````
   编译成功后，会出现_build目录，然后进入_build/emqx/rel/emqx/bin目录，启动emqx，如下：
   ./emqx start  
